@@ -1,0 +1,49 @@
+header{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+
+    h1{
+        color: #74D98C;
+        grid-column: 1/2;
+        justify-self: center;
+        align-self: center;
+    }
+
+    nav{
+        grid-column: 2/3;
+        align-self: center;
+        ul{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            width: 40%;
+            justify-content: space-around;
+            li{
+                a{
+                    text-decoration: none;
+                    color: #4B4C4F;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .actions{
+        grid-column: 3/4;
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        button{
+            padding: .6rem;
+            width: auto;
+            border-radius: 8px;
+            background-color: #74D98C;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}

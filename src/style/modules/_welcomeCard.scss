@@ -1,0 +1,15 @@
+.welcomeCard{
+
+    background-color: #74D98C;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    padding: .7rem;
+    display: grid;
+    height: 20rem;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    p{
+        width: 100%;
+    }
+}
