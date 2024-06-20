@@ -30,7 +30,7 @@ header .actions {
   grid-column: 3/4;
   align-self: center;
   justify-self: center;
-  width: 100%;
+  width: 46%;
   display: flex;
   justify-content: space-around;
 }
@@ -41,20 +41,54 @@ header .actions button {
   background-color: #74D98C;
   border: none;
   cursor: pointer;
+  font-weight: 600;
 }
 
 .welcomeCard {
   background-color: #74D98C;
-  width: 80%;
+  width: 82%;
   margin: auto;
   border-radius: 10px;
-  padding: 0.7rem;
-  display: grid;
-  height: 20rem;
-  grid-template-rows: 1fr 1fr 1fr;
+  padding: 2rem;
+  height: 22rem;
 }
 .welcomeCard p {
-  width: 100%;
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: end;
+}
+.welcomeCard #p1 {
+  width: 40%;
+}
+.welcomeCard #p2 {
+  width: 62%;
+}
+.welcomeCard #p3 {
+  width: 80%;
+}
+
+.depoiment_container {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.depoiment_container .wire {
+  background-color: #74D98C;
+  width: 15%;
+  padding: 0.4rem;
+  font-weight: bolder;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.depoiment_container .wire_start {
+  border-radius: 0px 15px 15px 0px;
+}
+.depoiment_container .wire_end {
+  border-radius: 15px 0px 0px 15px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
 }
 
 * {

@@ -1,0 +1,24 @@
+.depoiment_container{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .wire{
+        background-color: $backgroundGreen;
+        width:15%;
+        padding: .4rem;
+        font-weight: bolder;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .wire_start{
+        border-radius: 0px 15px 15px 0px;
+    }
+    .wire_end{
+        border-radius: 15px 0px 0px 15px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+    }
+}

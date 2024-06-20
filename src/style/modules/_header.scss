@@ -1,10 +1,12 @@
+@import "../variables/colors.scss";
+
 header{
     padding: 2rem;
     display: grid;
     grid-template-columns: 25% 50% 25%;
 
     h1{
-        color: #74D98C;
+        color: $backgroundGreen;
         grid-column: 1/2;
         justify-self: center;
         align-self: center;
@@ -30,10 +32,10 @@ header{
     }
 
     .actions{
-        grid-column: 3/4;
+        grid-column: 3 / 4;
         align-self: center;
         justify-self: center;
-        width: 100%;
+        width: 46%;
         display: flex;
         justify-content: space-around;
 
@@ -41,9 +43,10 @@ header{
             padding: .6rem;
             width: auto;
             border-radius: 8px;
-            background-color: #74D98C;
+            background-color: $backgroundGreen;
             border: none;
             cursor: pointer;
+            font-weight: 600;
         }
     }
 }
