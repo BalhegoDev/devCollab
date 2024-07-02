@@ -1,0 +1,69 @@
+@import '../variables/colors.scss';
+@import '../variables/styles.scss';
+
+.login-container{
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+
+    aside{
+        background-color: #181819;
+        position: relative;
+        height: 100%;
+        width: 50rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .round{
+            width: 13rem;
+            height: 13rem;
+            display: block;
+            position: absolute;
+            top: -13rem;
+            right: -13rem;
+            border-radius: 100px;
+            box-shadow: -250px 190px 49px 23px $backgroundGreen;
+            background-color: $backgroundGreen;
+        }
+
+        h1{
+            font-family: Montserrat;
+            color: #F9F9F9;
+            font-size: 6rem;
+            margin-right: 22rem;
+            width: 5rem;
+        }
+
+        .round-brackets{
+            color:$backgroundGreen;
+            background-color: #F9F9F9;
+            border-radius: 185px;
+            font-size: 4rem;
+            width: 7rem;
+            height: 7rem;
+            text-align: center;
+            border: 8px solid #181819;
+            position: absolute;
+            right: -2.9rem;
+        }
+
+        a{
+            margin-top: 2rem;
+            margin-right: 15rem;
+            button{
+                @include buttonMakeAccount;
+            }
+        }
+    }
+
+    .login-side{
+        height: 50rem;
+        width: 100%;
+        background-color: #F9F9F9;
+    }
+    
+}

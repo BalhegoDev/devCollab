@@ -72,6 +72,8 @@ header .actions button {
   display: flex;
   flex-direction: column;
   position: relative;
+  height: 24rem;
+  justify-content: center;
 }
 .depoiment_container .wire {
   background-color: #74D98C;
@@ -83,12 +85,141 @@ header .actions button {
 }
 .depoiment_container .wire_start {
   border-radius: 0px 15px 15px 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .depoiment_container .wire_end {
   border-radius: 15px 0px 0px 15px;
   position: absolute;
   right: 0px;
   bottom: 0px;
+}
+.depoiment_container .depoiments {
+  height: auto;
+}
+.depoiment_container .depoiments .depoiment {
+  border: 5px solid #181819;
+  display: grid;
+  grid-template-rows: 20% 42% 38%;
+  width: 30rem;
+  border-radius: 20px;
+  height: 16rem;
+  grid-template-columns: 85% 15%;
+  padding-top: 0.4rem;
+}
+.depoiment_container .depoiments .depoiment .avatar, .depoiment_container .depoiments .depoiment .userName, .depoiment_container .depoiments .depoiment .avaliacao {
+  grid-row: 1/2;
+  align-self: center;
+}
+.depoiment_container .depoiments .depoiment .avatar, .depoiment_container .depoiments .depoiment .userName {
+  grid-column: 1/2;
+}
+.depoiment_container .depoiments .depoiment .avatar {
+  margin-left: 4%;
+}
+.depoiment_container .depoiments .depoiment .userName {
+  margin-left: 18%;
+  font-weight: 700;
+}
+.depoiment_container .depoiments .depoiment .avaliation {
+  grid-row: 2/3;
+  grid-column: 1/3;
+  margin: 2% 4% 3% 2%;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+.depoiment_container .depoiments .depoiment footer {
+  background-color: #181819;
+  border-radius: 0 0 5px 5px;
+  grid-row: 3/4;
+  grid-column: 1/3;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.depoiment_container .depoiments .depoiment footer .realized {
+  color: #FFFFFF;
+  font-weight: 700;
+  text-align: end;
+  width: 50%;
+  font-size: 1.1rem;
+}
+.depoiment_container .depoiments .depoiment footer .teamName {
+  color: #74D98C;
+  font-weight: 700;
+  width: auto;
+  margin-left: 20%;
+  font-size: 1.6rem;
+}
+
+.login-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+.login-container aside {
+  background-color: #181819;
+  position: relative;
+  height: 100%;
+  width: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-container aside .round {
+  width: 13rem;
+  height: 13rem;
+  display: block;
+  position: absolute;
+  top: -13rem;
+  right: -13rem;
+  border-radius: 100px;
+  box-shadow: -250px 190px 49px 23px #74D98C;
+  background-color: #74D98C;
+}
+.login-container aside h1 {
+  font-family: Montserrat;
+  color: #F9F9F9;
+  font-size: 6rem;
+  margin-right: 22rem;
+  width: 5rem;
+}
+.login-container aside .round-brackets {
+  color: #74D98C;
+  background-color: #F9F9F9;
+  border-radius: 185px;
+  font-size: 4rem;
+  width: 7rem;
+  height: 7rem;
+  text-align: center;
+  border: 8px solid #181819;
+  position: absolute;
+  right: -2.9rem;
+}
+.login-container aside a {
+  margin-top: 2rem;
+  margin-right: 15rem;
+}
+.login-container aside a button {
+  background-color: #74D98C;
+  color: #181819;
+  border-radius: 27px;
+  border: none;
+  cursor: pointer;
+  padding: 0.7rem;
+  width: 13rem;
+  font-weight: bolder;
+  font-size: 1.4rem;
+}
+.login-container .login-side {
+  height: 50rem;
+  width: 100%;
+  background-color: #F9F9F9;
 }
 
 * {

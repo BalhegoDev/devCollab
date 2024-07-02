@@ -1,0 +1,13 @@
+@import "./colors.scss";
+
+@mixin buttonMakeAccount(){
+    background-color: $backgroundGreen;
+    color: #181819;
+    border-radius: 27px;
+    border: none;
+    cursor: pointer;
+    padding: .7rem;
+    width: 13rem;
+    font-weight:bolder;
+    font-size: 1.4rem;
+}
