@@ -26,7 +26,7 @@
             top: -13rem;
             right: -13rem;
             border-radius: 100px;
-            box-shadow: -250px 190px 49px 23px $backgroundGreen;
+            box-shadow: -250px 190px 142px 23px $backgroundGreen;
             background-color: $backgroundGreen;
         }
 
@@ -49,6 +49,7 @@
             border: 8px solid #181819;
             position: absolute;
             right: -2.9rem;
+            z-index: 2;
         }
 
         a{
@@ -64,6 +65,80 @@
         height: 50rem;
         width: 100%;
         background-color: #F9F9F9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+
+        .header-login-side{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 92%;
+            position: absolute;
+            top: 0;
+
+            .title{
+                color: $backgroundGreen;
+                font-size: 1.6rem;
+                font-weight: bolder;
+            }
+
+            a{
+                text-decoration: none;
+                button{
+                    @include buttonHome;
+            
+                }
+            }
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 60rem;
+            align-items: center;
+
+            .header-form{
+                display: flex;
+                flex-direction: column;
+                margin-right: 9rem;
+
+                h2{
+                    color: #4B4C4F;
+                    font-size: 2.4rem;
+                }
+                p{
+                    color: #B6B7BB;
+                }
+            }
+
+            :nth-child(3){
+                margin-top: 2rem
+            }
+
+            label{
+                @include label-input;
+                margin-right: 12rem;
+            }
+
+            .check{
+                display: flex;
+                flex-direction: row;
+                width: 39rem;
+                margin-top: 1rem;
+                p{
+                    margin-left: 1rem;
+                }
+            }
+
+            button{
+                @include buttonMakeAccount;
+                margin-right: 28rem;
+                margin-top: 2rem;
+            }
+        }
     }
-    
 }

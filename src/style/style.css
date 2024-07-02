@@ -179,7 +179,7 @@ header .actions button {
   top: -13rem;
   right: -13rem;
   border-radius: 100px;
-  box-shadow: -250px 190px 49px 23px #74D98C;
+  box-shadow: -250px 190px 142px 23px #74D98C;
   background-color: #74D98C;
 }
 .login-container aside h1 {
@@ -200,6 +200,7 @@ header .actions button {
   border: 8px solid #181819;
   position: absolute;
   right: -2.9rem;
+  z-index: 2;
 }
 .login-container aside a {
   margin-top: 2rem;
@@ -215,11 +216,119 @@ header .actions button {
   width: 13rem;
   font-weight: bolder;
   font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.7s all;
+}
+.login-container aside a button:hover {
+  transform: translateX(25px);
 }
 .login-container .login-side {
   height: 50rem;
   width: 100%;
   background-color: #F9F9F9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.login-container .login-side .header-login-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 92%;
+  position: absolute;
+  top: 0;
+}
+.login-container .login-side .header-login-side .title {
+  color: #74D98C;
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+.login-container .login-side .header-login-side a {
+  text-decoration: none;
+}
+.login-container .login-side .header-login-side a button {
+  border-radius: 12px;
+  padding: 0.7rem;
+  border: thin solid #4B4C4F;
+  cursor: pointer;
+  display: flex;
+  transition: all 0.7s;
+  align-items: center;
+  justify-content: space-between;
+  width: 5.8rem;
+}
+.login-container .login-side .header-login-side a button:hover {
+  transform: scale(1.23);
+}
+.login-container .login-side .header-login-side a button p {
+  color: #97989B;
+  font-weight: bolder;
+}
+.login-container .login-side form {
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+  align-items: center;
+}
+.login-container .login-side form .header-form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 9rem;
+}
+.login-container .login-side form .header-form h2 {
+  color: #4B4C4F;
+  font-size: 2.4rem;
+}
+.login-container .login-side form .header-form p {
+  color: #B6B7BB;
+}
+.login-container .login-side form :nth-child(3) {
+  margin-top: 2rem;
+}
+.login-container .login-side form label {
+  display: flex;
+  flex-direction: column;
+  margin-right: 12rem;
+}
+.login-container .login-side form label span {
+  color: #4B4C4F;
+}
+.login-container .login-side form label input {
+  padding: 1.4rem;
+  width: 28rem;
+  border-radius: 20px;
+  outline: none;
+  border: thin solid #4B4C4F;
+}
+.login-container .login-side form .check {
+  display: flex;
+  flex-direction: row;
+  width: 39rem;
+  margin-top: 1rem;
+}
+.login-container .login-side form .check p {
+  margin-left: 1rem;
+}
+.login-container .login-side form button {
+  background-color: #74D98C;
+  color: #181819;
+  border-radius: 27px;
+  border: none;
+  cursor: pointer;
+  padding: 0.7rem;
+  width: 13rem;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.7s all;
+  margin-right: 28rem;
+  margin-top: 2rem;
+}
+.login-container .login-side form button:hover {
+  transform: translateX(25px);
 }
 
 * {
