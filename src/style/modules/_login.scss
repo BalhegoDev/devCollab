@@ -19,15 +19,9 @@
         flex-direction: column;
 
         .round{
-            width: 13rem;
-            height: 13rem;
-            display: block;
-            position: absolute;
+            @include round;
             top: -13rem;
             right: -13rem;
-            border-radius: 100px;
-            box-shadow: -250px 190px 142px 23px $backgroundGreen;
-            background-color: $backgroundGreen;
         }
 
         h1{

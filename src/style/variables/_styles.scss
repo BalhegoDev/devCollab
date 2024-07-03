@@ -14,7 +14,7 @@
     transition:.7s all;
 
     &:hover{
-        transform: translateX(25px);
+        transform: perspective(1000px) translateX(25px) rotateY(10deg);
     }
 }
 
@@ -47,15 +47,40 @@
     }
 
     input{
-        padding: 1.4rem;
+        padding: 1rem;
         width: 28rem;
         border-radius: 20px;
         outline: none;
         border: thin solid #4B4C4F;
+        font-size: 1.3rem;
 
         @media only screen and (max-width:1440px){
             padding:.8rem;
         }
     }
+}
 
+@mixin outdoor(){
+    height: 30rem;
+    background-color: #181818;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+    width: 100%;
+
+    img{
+        width: 28rem;
+    }
+}
+
+@mixin round(){
+    border-radius: 100px;
+    box-shadow: -250px 190px 300px 23px $backgroundGreen;
+    background-color: $backgroundGreen;
+    width: 13rem;
+    height: 13rem;
+    display: block;
+    position: absolute;
 }

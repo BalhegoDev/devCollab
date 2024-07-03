@@ -77,7 +77,7 @@ header .actions button {
 }
 .depoiment_container .wire {
   background-color: #74D98C;
-  width: 15%;
+  width: 20rem;
   padding: 0.4rem;
   font-weight: bolder;
   font-size: 1.6rem;
@@ -172,15 +172,15 @@ header .actions button {
   flex-direction: column;
 }
 .login-container aside .round {
+  border-radius: 100px;
+  box-shadow: -250px 190px 300px 23px #74D98C;
+  background-color: #74D98C;
   width: 13rem;
   height: 13rem;
   display: block;
   position: absolute;
   top: -13rem;
   right: -13rem;
-  border-radius: 100px;
-  box-shadow: -250px 190px 142px 23px #74D98C;
-  background-color: #74D98C;
 }
 .login-container aside h1 {
   font-family: Montserrat;
@@ -220,7 +220,7 @@ header .actions button {
   transition: 0.7s all;
 }
 .login-container aside a button:hover {
-  transform: translateX(25px);
+  transform: perspective(1000px) translateX(25px) rotateY(10deg);
 }
 .login-container .login-side {
   height: 100%;
@@ -297,11 +297,12 @@ header .actions button {
   color: #4B4C4F;
 }
 .login-container .login-side form label input {
-  padding: 1.4rem;
+  padding: 1rem;
   width: 28rem;
   border-radius: 20px;
   outline: none;
   border: thin solid #4B4C4F;
+  font-size: 1.3rem;
 }
 @media only screen and (max-width: 1440px) {
   .login-container .login-side form label input {
@@ -333,7 +334,7 @@ header .actions button {
   margin-top: 2rem;
 }
 .login-container .login-side form button:hover {
-  transform: translateX(25px);
+  transform: perspective(1000px) translateX(25px) rotateY(10deg);
 }
 
 .register-container .register-side .register-header .title {
@@ -362,6 +363,9 @@ header .actions button {
   color: #97989B;
   font-weight: bolder;
 }
+.register-container .register-side form {
+  display: grid;
+}
 .register-container .register-side form label {
   display: flex;
   flex-direction: column;
@@ -370,11 +374,12 @@ header .actions button {
   color: #4B4C4F;
 }
 .register-container .register-side form label input {
-  padding: 1.4rem;
+  padding: 1rem;
   width: 28rem;
   border-radius: 20px;
   outline: none;
   border: thin solid #4B4C4F;
+  font-size: 1.3rem;
 }
 @media only screen and (max-width: 1440px) {
   .register-container .register-side form label input {
@@ -383,6 +388,75 @@ header .actions button {
 }
 .register-container .register-side form label input {
   width: 17rem;
+}
+
+main .outdoor {
+  height: 30rem;
+  background-color: #181818;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  width: 100%;
+  margin-top: 5rem;
+  position: relative;
+  overflow: hidden;
+}
+main .outdoor img {
+  width: 28rem;
+}
+main .outdoor .round1 {
+  border-radius: 100px;
+  box-shadow: -250px 190px 300px 23px #74D98C;
+  background-color: #74D98C;
+  width: 13rem;
+  height: 13rem;
+  display: block;
+  position: absolute;
+  right: -18rem;
+  top: -22rem;
+}
+main .outdoor .round2 {
+  border-radius: 100px;
+  box-shadow: -250px 190px 300px 23px #74D98C;
+  background-color: #74D98C;
+  width: 13rem;
+  height: 13rem;
+  display: block;
+  position: absolute;
+  left: -13rem;
+  bottom: -11rem;
+  box-shadow: 200px 67px 300px 23px #74D98C;
+}
+main .outdoor article p {
+  color: #F9F9F9;
+  width: 31rem;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+main .outdoor article a {
+  text-decoration: none;
+}
+main .outdoor article a button {
+  background-color: #74D98C;
+  color: #181819;
+  border-radius: 27px;
+  border: none;
+  cursor: pointer;
+  padding: 0.7rem;
+  width: 13rem;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.7s all;
+  width: 20rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .outdoor article a button:hover {
+  transform: perspective(1000px) translateX(25px) rotateY(10deg);
 }
 
 * {

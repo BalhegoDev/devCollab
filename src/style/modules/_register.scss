@@ -22,6 +22,8 @@
         }
 
         form{
+            display: grid;
+            
             label{
                 @include label-input;
 

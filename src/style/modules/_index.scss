@@ -1,0 +1,43 @@
+@import '../variables/styles.scss';
+
+main{
+    .outdoor{
+        @include outdoor;
+        margin-top: 5rem;
+        position: relative;
+        overflow: hidden;
+
+        .round1{
+            @include round;
+            right: -18rem;
+            top: -22rem;
+        }
+
+        .round2{
+            @include round;
+            left: -13rem;
+            bottom: -11rem;
+            box-shadow: 200px 67px 300px 23px $backgroundGreen;
+        }
+
+        article{
+            p{
+                color: #F9F9F9;
+                width: 31rem;
+                font-size: 2.4rem;
+                margin-bottom: 2rem;
+            }
+            a{
+                text-decoration: none;
+
+                button{
+                    @include buttonMakeAccount;
+                    width:20rem;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
