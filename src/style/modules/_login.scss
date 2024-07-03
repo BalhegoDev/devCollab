@@ -62,7 +62,7 @@
     }
 
     .login-side{
-        height: 50rem;
+        height: 100%;
         width: 100%;
         background-color: #F9F9F9;
         display: flex;
@@ -90,7 +90,6 @@
                 text-decoration: none;
                 button{
                     @include buttonHome;
-            
                 }
             }
         }

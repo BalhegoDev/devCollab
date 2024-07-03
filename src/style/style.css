@@ -223,7 +223,7 @@ header .actions button {
   transform: translateX(25px);
 }
 .login-container .login-side {
-  height: 50rem;
+  height: 100%;
   width: 100%;
   background-color: #F9F9F9;
   display: flex;
@@ -232,7 +232,7 @@ header .actions button {
   flex-direction: column;
   position: relative;
 }
-.login-container .login-side .header-login-side {
+.login-container .login-side .header-login-side, .login-container .login-side .register-container .register-side .register-header, .register-container .register-side .login-container .login-side .register-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -241,15 +241,15 @@ header .actions button {
   position: absolute;
   top: 0;
 }
-.login-container .login-side .header-login-side .title {
+.login-container .login-side .header-login-side .title, .login-container .login-side .register-container .register-side .register-header .title, .register-container .register-side .login-container .login-side .register-header .title {
   color: #74D98C;
   font-size: 1.6rem;
   font-weight: bolder;
 }
-.login-container .login-side .header-login-side a {
+.login-container .login-side .header-login-side a, .login-container .login-side .register-container .register-side .register-header a, .register-container .register-side .login-container .login-side .register-header a {
   text-decoration: none;
 }
-.login-container .login-side .header-login-side a button {
+.login-container .login-side .header-login-side a button, .login-container .login-side .register-container .register-side .register-header a button, .register-container .register-side .login-container .login-side .register-header a button {
   border-radius: 12px;
   padding: 0.7rem;
   border: thin solid #4B4C4F;
@@ -260,10 +260,10 @@ header .actions button {
   justify-content: space-between;
   width: 5.8rem;
 }
-.login-container .login-side .header-login-side a button:hover {
+.login-container .login-side .header-login-side a button:hover, .login-container .login-side .register-container .register-side .register-header a button:hover, .register-container .register-side .login-container .login-side .register-header a button:hover {
   transform: scale(1.23);
 }
-.login-container .login-side .header-login-side a button p {
+.login-container .login-side .header-login-side a button p, .login-container .login-side .register-container .register-side .register-header a button p, .register-container .register-side .login-container .login-side .register-header a button p {
   color: #97989B;
   font-weight: bolder;
 }
@@ -303,6 +303,11 @@ header .actions button {
   outline: none;
   border: thin solid #4B4C4F;
 }
+@media only screen and (max-width: 1440px) {
+  .login-container .login-side form label input {
+    padding: 0.8rem;
+  }
+}
 .login-container .login-side form .check {
   display: flex;
   flex-direction: row;
@@ -329,6 +334,55 @@ header .actions button {
 }
 .login-container .login-side form button:hover {
   transform: translateX(25px);
+}
+
+.register-container .register-side .register-header .title {
+  color: #74D98C;
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+.register-container .register-side .register-header a {
+  text-decoration: none;
+}
+.register-container .register-side .register-header a button {
+  border-radius: 12px;
+  padding: 0.7rem;
+  border: thin solid #4B4C4F;
+  cursor: pointer;
+  display: flex;
+  transition: all 0.7s;
+  align-items: center;
+  justify-content: space-between;
+  width: 5.8rem;
+}
+.register-container .register-side .register-header a button:hover {
+  transform: scale(1.23);
+}
+.register-container .register-side .register-header a button p {
+  color: #97989B;
+  font-weight: bolder;
+}
+.register-container .register-side form label {
+  display: flex;
+  flex-direction: column;
+}
+.register-container .register-side form label span {
+  color: #4B4C4F;
+}
+.register-container .register-side form label input {
+  padding: 1.4rem;
+  width: 28rem;
+  border-radius: 20px;
+  outline: none;
+  border: thin solid #4B4C4F;
+}
+@media only screen and (max-width: 1440px) {
+  .register-container .register-side form label input {
+    padding: 0.8rem;
+  }
+}
+.register-container .register-side form label input {
+  width: 17rem;
 }
 
 * {
