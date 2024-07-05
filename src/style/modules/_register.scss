@@ -2,11 +2,59 @@
 @import '../variables/colors.scss';
 
 .register-container{
+    display: flex;
+
+   aside{
+        width: 42rem;
+        background-color: #181819;
+        position: relative;
+        height: 59.54rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 3.5rem;
+
+        .round{
+            @include round;
+            top: -13rem;
+            box-shadow: 7px 94px 300px 23px $backgroundGreen;
+        }
+
+        h1{
+            color: #F9F9F9;
+            text-align: center;
+            width: 7rem;
+            margin-right: 7rem
+        }
+
+        button{
+            @include buttonMakeAccount;
+        }
+
+        .round-brackets{
+            color:$backgroundGreen;
+            background-color: #F9F9F9;
+            border-radius: 185px;
+            font-size: 4rem;
+            width: 7rem;
+            height: 7rem;
+            text-align: center;
+            border: 8px solid #181819;
+            position: absolute;
+            z-index: 2;
+            left: -3.5rem;
+        }
+   }
+
     .register-side{
+        width: 78rem;
 
         .register-header{
             @extend .header-login-side;
-            
+            display: flex;
+            justify-content: space-between;
+
             .title{
                 color: $backgroundGreen;
                 font-size: 1.6rem;
@@ -23,10 +71,11 @@
 
         form{
             display: grid;
-            
+            grid-template-columns: 50% 50%;
+
             label{
                 @include label-input;
-
+    
                 input{
                     width: 17rem;
                 }

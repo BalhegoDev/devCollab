@@ -337,6 +337,73 @@ header .actions button {
   transform: perspective(1000px) translateX(25px) rotateY(10deg);
 }
 
+.register-container {
+  display: flex;
+}
+.register-container aside {
+  width: 42rem;
+  background-color: #181819;
+  position: relative;
+  height: 59.54rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 3.5rem;
+}
+.register-container aside .round {
+  border-radius: 100px;
+  box-shadow: -250px 190px 300px 23px #74D98C;
+  background-color: #74D98C;
+  width: 13rem;
+  height: 13rem;
+  display: block;
+  position: absolute;
+  top: -13rem;
+  box-shadow: 7px 94px 300px 23px #74D98C;
+}
+.register-container aside h1 {
+  color: #F9F9F9;
+  text-align: center;
+  width: 7rem;
+  margin-right: 7rem;
+}
+.register-container aside button {
+  background-color: #74D98C;
+  color: #181819;
+  border-radius: 27px;
+  border: none;
+  cursor: pointer;
+  padding: 0.7rem;
+  width: 13rem;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.7s all;
+}
+.register-container aside button:hover {
+  transform: perspective(1000px) translateX(25px) rotateY(10deg);
+}
+.register-container aside .round-brackets {
+  color: #74D98C;
+  background-color: #F9F9F9;
+  border-radius: 185px;
+  font-size: 4rem;
+  width: 7rem;
+  height: 7rem;
+  text-align: center;
+  border: 8px solid #181819;
+  position: absolute;
+  z-index: 2;
+  left: -3.5rem;
+}
+.register-container .register-side {
+  width: 78rem;
+}
+.register-container .register-side .register-header {
+  display: flex;
+  justify-content: space-between;
+}
 .register-container .register-side .register-header .title {
   color: #74D98C;
   font-size: 1.6rem;
@@ -365,6 +432,7 @@ header .actions button {
 }
 .register-container .register-side form {
   display: grid;
+  grid-template-columns: 50% 50%;
 }
 .register-container .register-side form label {
   display: flex;
