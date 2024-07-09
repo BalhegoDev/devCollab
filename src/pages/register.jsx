@@ -27,18 +27,21 @@ export default function Register(){
                 <p>Crie sua conta</p>
                 <form>
                     <MaskedInput
+                        id="label1"
                         type="text"
                         label="Seu nome completo"
                         value={nome}
                         setValue={setNome}
                     />
                     <MaskedInput
+                        id="label2"
                         type="text"
                         label="Nome de usuário"
                         value={username}
                         setValue={setUsername}
                     />
                     <MaskedInput
+                        id="label3"
                         type="text"
                         label="Seu CPF"
                         value={cpf}
@@ -46,6 +49,7 @@ export default function Register(){
                         mask={"999.999.999-99"}
                     />
                     <MaskedInput
+                        id="label4"
                         type="text"
                         label="data de nascimento"
                         value={nasc}
@@ -53,12 +57,14 @@ export default function Register(){
                         mask={"99/99/9999"}
                     />
                     <MaskedInput
+                        id="label5"
                         type="email"
                         label="Seu Email"
                         value={email}
                         setValue={setEmail}
                     />
                     <MaskedInput
+                        id="label6"
                         type="text"
                         label="Número de telefone (opcional)"
                         value={telefone}
@@ -86,15 +92,18 @@ export default function Register(){
                         />
                     </div>
                     <MaskedInput
+                        id="label7"
                         type="password"
                         label="Crie uma senha"
                         value={passowrd}
                         setValue={setPassword}
                     />
                     <CheckboxInput
+                        id="label8"
                         label="Eu concordo com os Termos de Serviço e a Politica de Privacidade"
                     />
                     <CheckboxInput
+                        id="label9"
                         label="Desejo receber propragandas promocionais por e-mail"
                     />
                     <button className="createAccount">Criar Conta</button>

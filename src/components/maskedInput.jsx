@@ -1,9 +1,9 @@
 import React from "react";
 import InputMask from 'react-input-mask';
 
-export default function MaskedInput({label,mask,value,setValue,type,className}){
+export default function MaskedInput({id,label,mask,value,setValue,type,className}){
     return(
-        <label className={className}>
+        <label id={id} className={className}>
             <span>{label}</span>
             <InputMask 
                 mask={mask}

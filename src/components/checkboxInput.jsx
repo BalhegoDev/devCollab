@@ -1,8 +1,8 @@
 import React from "react";
 
-export default function CheckboxInput({label}){
+export default function CheckboxInput({id,label}){
     return(
-        <label>
+        <label id={id}>
             <input
                 type="checkbox"
             />

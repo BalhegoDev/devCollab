@@ -3,7 +3,7 @@ import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Index from "./pages";
 import Login from "./pages/login";
 import Register from "./pages/register";
-import AnimatedInvitation from "./pages/animatedInvitation";
+import AnimatedInvitePage from "./pages/animatedInvitePage";
 
 export default function App(){
   return(
@@ -12,7 +12,7 @@ export default function App(){
         <Route path="/" element={<Index/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
-        <Route path="invite" element={<AnimatedInvitation/>}/>
+        <Route path="/invite" element={<AnimatedInvitePage/>}/>
       </Routes>
     </BrowserRouter>
   )
