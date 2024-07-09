@@ -5,12 +5,23 @@
 @import './modules/login.scss';
 @import './modules/register.scss';
 @import './modules/index.scss';
+@import './modules/projetos.scss';
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
 }
 
 body{

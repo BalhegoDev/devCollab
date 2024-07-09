@@ -4,6 +4,7 @@ import Index from "./pages";
 import Login from "./pages/login";
 import Register from "./pages/register";
 import AnimatedInvitePage from "./pages/animatedInvitePage";
+import Projetos from "./pages/projetos";
 
 export default function App(){
   return(
@@ -12,6 +13,7 @@ export default function App(){
         <Route path="/" element={<Index/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
+        <Route path="/projetos" element={<Projetos/>}/>
         <Route path="/invite" element={<AnimatedInvitePage/>}/>
       </Routes>
     </BrowserRouter>

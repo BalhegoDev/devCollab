@@ -6,52 +6,43 @@ export default function AnimatedInvitePage(){
 
     const div = useRef();
 
-    useEffect(() =>{
-        
-        const width = div.current.clientWidth;
-        const height = div.current.clientHeight
+    useEffect(() => {
+    // Configurações iniciais
+    const camera = new THREE.PerspectiveCamera(75, div.current.clientWidth / window.innerHeight, 0.1, 1000);
+    const scene = new THREE.Scene();
+    const renderer = new THREE.WebGLRenderer();
+    const control = new OrbitControls(camera, renderer.domElement);
 
-        const renderer = new THREE.WebGLRenderer();
-        const camera = new THREE.PerspectiveCamera(75,width / height,0.1,1000);
-        const scene = new THREE.Scene();
-        const axes = new THREE.AxesHelper(5);
+    const axes = new THREE.AxesHelper(5);
+    scene.add(axes);
 
-        const control = new OrbitControls(camera,renderer.domElement);
+    camera.position.z = 8;
+    control.update();
 
-        scene.add(axes);
-        camera.position.z = 5;
-        camera.position.y = 1;
+    renderer.setSize(window.innerWidth, window.innerHeight);
 
-        control.update();
+    const boxGeometry = new THREE.BoxGeometry();
+    const material = new THREE.MeshBasicMaterial({"color" : "#00FFFF"});
+    const box = new THREE.Mesh(boxGeometry,material);
+    scene.add(box);
 
-        const sphere = new THREE.SphereGeometry();
-        const cube = new THREE.BoxGeometry();
-        const material = new THREE.MeshBasicMaterial({"color": "#008000"});
+    const animate = () =>{
+        requestAnimationFrame(animate);
+        box.rotation.x += 0.01
+        box.rotation.y += 0.01
+        box.rotation.z += 0.01
+        renderer.render(scene, camera);
+    }
 
-        const box = new THREE.Mesh(cube,material);
-        const esfera = new THREE.Mesh(sphere,material);
+    animate();
 
-        scene.add(box);
-        scene.add(esfera);
+    div.current.appendChild(renderer.domElement);
 
-        const animate = () =>{
-            requestAnimationFrame(animate);
-            esfera.rotation.x += .01;
-            esfera.rotation.y += 0.01;
-            esfera.rotation.z += .01 ;
-            renderer.render(scene,camera);
-        }
+    return () => {
+        div.current.removeChild(renderer.domElement);
+    };
+}, []);
 
-        renderer.setSize(div.current.clientWidth, div.current.clientHeight);
-        animate();
-
-        div.current.appendChild(renderer.domElement);
-
-        return () => {
-            div.current.removeChild(renderer.domElement);
-        };
-
-    },[]);
 
     return(
         <div ref={div} style={{ width: '100%', height: '100vh' }}>

@@ -3,7 +3,7 @@ import React from "react";
 export default function RadioInput({name,label,value,setValue}){
     return(
         <>
-            <label>
+            <label style={{display:"flex",flexDirection:"row",alignItems:"center", position:"relative"}}>
                 <input
                     type="radio"
                     name={name}
