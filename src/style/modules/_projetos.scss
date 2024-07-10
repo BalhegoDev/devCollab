@@ -1,3 +1,5 @@
+@import '../variables/colors.scss';
+
 .subHeader{
     width: 99rem;
     margin: auto;
@@ -7,12 +9,19 @@
     display: flex;
     align-items: center;
 
+    @media only screen and (min-width:2560px){
+        width: 129rem;
+    }
+
     p{
         position: relative;
         height: auto;
         display: flex;
         align-items: center;
         font-size: 1.23rem;
+        @media only screen and (min-width:2560px){
+            font-size: 2.2rem;
+        }
 
         span{
             left: 0;
@@ -23,6 +32,7 @@
             display: flex;
             align-items: center;
             height: 5rem;
+            padding: 0px 1rem 0px 1rem;
         }
 
         a{
@@ -40,10 +50,12 @@
 
 form{
     width: 25rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-left: 5rem;
     .header{
         border-bottom: 1px solid black;
+        font-size: 2rem;
+        display: flex;
     }
 
     .orcamento{
@@ -55,6 +67,8 @@ form{
             padding: 0;
             margin-top: 2rem;
             margin-bottom: 2rem;
+            display: flex;
+            font-size: 1.4rem;
         }
 
         article{
@@ -70,5 +84,44 @@ form{
                 border:thin solid #181818;
             }
         }
+    }
+    .types{
+        margin-top: 2rem;
+        p{
+            font-size: 1.4rem;
+        }
+        label{
+            margin-top: 1.4rem;
+            input{
+                cursor: pointer;
+            }
+            span{
+                margin-left: .8rem;
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .design{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        p{
+            font-size: 1.4rem;
+        }
+
+        label{
+            margin-top: 1rem;
+
+            span{
+                margin-left: 1rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .filter{
+        margin-top: .8rem;
+        @include buttonMakeAccount;
     }
 }

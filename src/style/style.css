@@ -621,12 +621,22 @@ main .outdoor article a button:hover {
   display: flex;
   align-items: center;
 }
+@media only screen and (min-width: 2560px) {
+  .subHeader {
+    width: 129rem;
+  }
+}
 .subHeader p {
   position: relative;
   height: auto;
   display: flex;
   align-items: center;
   font-size: 1.23rem;
+}
+@media only screen and (min-width: 2560px) {
+  .subHeader p {
+    font-size: 2.2rem;
+  }
 }
 .subHeader p span {
   left: 0;
@@ -637,6 +647,7 @@ main .outdoor article a button:hover {
   display: flex;
   align-items: center;
   height: 5rem;
+  padding: 0px 1rem 0px 1rem;
 }
 .subHeader p a {
   background-color: #181818;
@@ -651,11 +662,13 @@ main .outdoor article a button:hover {
 
 form {
   width: 25rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-left: 5rem;
 }
 form .header {
   border-bottom: 1px solid black;
+  font-size: 2rem;
+  display: flex;
 }
 form .orcamento {
   display: flex;
@@ -666,6 +679,8 @@ form .orcamento header {
   padding: 0;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  display: flex;
+  font-size: 1.4rem;
 }
 form .orcamento article {
   display: flex;
@@ -679,6 +694,54 @@ form .orcamento article input {
   outline: none;
   border-radius: 3px;
   border: thin solid #181818;
+}
+form .types {
+  margin-top: 2rem;
+}
+form .types p {
+  font-size: 1.4rem;
+}
+form .types label {
+  margin-top: 1.4rem;
+}
+form .types label input {
+  cursor: pointer;
+}
+form .types label span {
+  margin-left: 0.8rem;
+  font-size: 1.4rem;
+}
+form .design {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+form .design p {
+  font-size: 1.4rem;
+}
+form .design label {
+  margin-top: 1rem;
+}
+form .design label span {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+form .filter {
+  margin-top: 0.8rem;
+  background-color: #74D98C;
+  color: #181819;
+  border-radius: 27px;
+  border: none;
+  cursor: pointer;
+  padding: 0.7rem;
+  width: 13rem;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.7s all;
+}
+form .filter:hover {
+  transform: perspective(1000px) translateX(25px) rotateY(10deg);
 }
 
 * {
