@@ -631,7 +631,7 @@ main .outdoor article a button:hover {
   height: auto;
   display: flex;
   align-items: center;
-  font-size: 1.23rem;
+  font-size: 1.12rem;
 }
 @media only screen and (min-width: 2560px) {
   .subHeader p {
@@ -660,73 +660,77 @@ main .outdoor article a button:hover {
   margin-left: 2rem;
 }
 
-form {
+.main_projects {
+  display: flex;
+  justify-content: space-between;
+}
+.main_projects form {
   width: 25rem;
   margin-top: 2rem;
   margin-left: 5rem;
 }
-form .header {
+.main_projects form .header {
   border-bottom: 1px solid black;
   font-size: 2rem;
   display: flex;
 }
-form .orcamento {
+.main_projects form .orcamento {
   display: flex;
   flex-direction: column;
   align-items: start;
 }
-form .orcamento header {
+.main_projects form .orcamento header {
   padding: 0;
   margin-top: 2rem;
   margin-bottom: 2rem;
   display: flex;
   font-size: 1.4rem;
 }
-form .orcamento article {
+.main_projects form .orcamento article {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 15rem;
 }
-form .orcamento article input {
+.main_projects form .orcamento article input {
   width: 5rem;
   padding: 0.8rem;
   outline: none;
   border-radius: 3px;
   border: thin solid #181818;
 }
-form .types {
+.main_projects form .types {
   margin-top: 2rem;
 }
-form .types p {
+.main_projects form .types p {
   font-size: 1.4rem;
 }
-form .types label {
+.main_projects form .types label {
   margin-top: 1.4rem;
 }
-form .types label input {
+.main_projects form .types label input {
   cursor: pointer;
 }
-form .types label span {
+.main_projects form .types label span {
   margin-left: 0.8rem;
   font-size: 1.4rem;
 }
-form .design {
+.main_projects form .design {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
 }
-form .design p {
+.main_projects form .design p {
   font-size: 1.4rem;
 }
-form .design label {
+.main_projects form .design label {
   margin-top: 1rem;
 }
-form .design label span {
+.main_projects form .design label span {
   margin-left: 1rem;
   font-size: 1.2rem;
 }
-form .filter {
+.main_projects form .filter {
   margin-top: 0.8rem;
   background-color: #74D98C;
   color: #181819;
@@ -740,7 +744,7 @@ form .filter {
   font-family: "Montserrat", sans-serif;
   transition: 0.7s all;
 }
-form .filter:hover {
+.main_projects form .filter:hover {
   transform: perspective(1000px) translateX(25px) rotateY(10deg);
 }
 

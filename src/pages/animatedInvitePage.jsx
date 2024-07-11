@@ -12,19 +12,30 @@ export default function AnimatedInvitePage(){
     const scene = new THREE.Scene();
     const renderer = new THREE.WebGLRenderer();
     const control = new OrbitControls(camera, renderer.domElement);
-
-    const axes = new THREE.AxesHelper(5);
-    scene.add(axes);
-
+    const gridHelper = new THREE.GridHelper();  
+    const axes = new THREE.AxesHelper(10)
+    
     camera.position.z = 8;
+
     control.update();
+    scene.add(axes);
+    scene.add(gridHelper);
+
 
     renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setClearColor("#F0EAD6");
 
     const boxGeometry = new THREE.BoxGeometry();
-    const material = new THREE.MeshBasicMaterial({"color" : "#00FFFF"});
+    const material = new THREE.MeshStandardMaterial({ color: "#00FFFF"});
     const box = new THREE.Mesh(boxGeometry,material);
     scene.add(box);
+
+    const centerObject = new THREE.Object3D();
+    scene.add(centerObject);
+
+    centerObject.add(box);
+
+    box.position.y = 2;   
 
     const animate = () =>{
         requestAnimationFrame(animate);
@@ -35,6 +46,7 @@ export default function AnimatedInvitePage(){
     }
 
     animate();
+
 
     div.current.appendChild(renderer.domElement);
 
