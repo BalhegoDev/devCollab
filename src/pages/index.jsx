@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import "../style/style.css";
-import Header from "../components/header";
-import WelcomeCard from "../components/welcomeCard";
-import DepoimentWire from "../components/depoimentWire";
-import Depoiment from "../components/depoiment";
-import Outdoor from "../components/outdoor";
+import Header from "../components/layout/header";
+import WelcomeCard from "../components/layout/welcomeCard";
+import DepoimentWire from "../components/common/depoimentWire";
+import Depoiment from "../components/layout/depoiment";
+import Outdoor from "../components/layout/outdoor";
 import {faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

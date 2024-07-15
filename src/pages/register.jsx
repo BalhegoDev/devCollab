@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import {Link} from "react-router-dom";
-import MaskedInput from "../components/maskedInput";
-import ButtonHome from "../components/buttonHome";
-import RadioInput from "../components/radioInput";
-import CheckboxInput from "../components/checkboxInput";
+import MaskedInput from "../components/common/maskedInput";
+import ButtonHome from "../components/common/buttonHome";
+import RadioInput from "../components/common/radioInput";
+import CheckboxInput from "../components/common/checkboxInput";
 
 export default function Register(){
 

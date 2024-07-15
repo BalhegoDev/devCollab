@@ -1,5 +1,5 @@
 import React from "react";
-import company from "../assets/company.svg";
+import company from "../../assets/company.svg";
 
 export default function Outdoor({children}){
     return(

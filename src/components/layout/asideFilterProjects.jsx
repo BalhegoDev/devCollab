@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import { filterContext } from "../contexts/FilterContext";
+import { filterContext } from "../../contexts/FilterContext";
 
 
 export default function AsideFilterProjects(){

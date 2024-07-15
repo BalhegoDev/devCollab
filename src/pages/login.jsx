@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Input from "../components/input";
-import ButtonHome from "../components/buttonHome";
+import Input from "../components/common/input";
+import ButtonHome from "../components/common/buttonHome";
 
 export default function Login(){
 
