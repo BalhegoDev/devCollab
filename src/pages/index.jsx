@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../style/style.css";
 import Header from "../components/layout/header";
 import WelcomeCard from "../components/layout/welcomeCard";
@@ -44,6 +44,19 @@ export default function Index(){
                         </button>
                     </Link>
                 </Outdoor>
+                <section className="howWorks">
+                    <header>
+                        <h2>
+                            Como Funciona
+                        </h2>
+                        <p>
+                            A proposta do nosso site é de facilitar a comunicação entre compradores e os profissionais que prestarão esse serviço
+                        </p>
+                    </header>
+                    <div className="desktop">
+                        
+                    </div>
+                </section>
             </main>
         </>
         

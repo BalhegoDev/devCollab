@@ -14,7 +14,7 @@ export default function Projetos() {
         <p>
           <span>Encontre Trabalhos</span>
           Precisa do serviço de um profissional?
-          <Link to={"/"}>Crie um Projeto</Link>
+          <Link to={"/createProject"}>Crie um Projeto</Link>
           ou
           <Link to={"/profissionais"}>Procure um Profissional</Link>
         </p>

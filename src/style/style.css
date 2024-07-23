@@ -826,6 +826,72 @@ main .outdoor article a button:hover {
   transform: perspective(1000px) translateX(25px) rotateY(10deg);
 }
 
+.createProjectSection h2 {
+  margin-left: 16rem;
+}
+.createProjectSection form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16rem;
+  margin-top: 5rem;
+}
+.createProjectSection form .top {
+  display: flex;
+  gap: 2rem;
+}
+.createProjectSection form .top label {
+  display: flex;
+  flex-direction: column;
+}
+.createProjectSection form .top label span {
+  color: #4B4C4F;
+}
+.createProjectSection form .top label input {
+  padding: 1rem;
+  width: 28rem;
+  border-radius: 20px;
+  outline: none;
+  border: thin solid #4B4C4F;
+  font-size: 1.3rem;
+}
+@media only screen and (max-width: 1440px) {
+  .createProjectSection form .top label input {
+    padding: 0.8rem;
+  }
+}
+.createProjectSection form .top label input {
+  width: 20rem;
+}
+.createProjectSection form label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.createProjectSection form label textarea {
+  width: 60rem;
+  outline: none;
+  border-radius: 8px;
+  padding: 0.8rem;
+  font-size: 1.4rem;
+}
+.createProjectSection form button {
+  background-color: #74D98C;
+  color: #181819;
+  border-radius: 27px;
+  border: none;
+  cursor: pointer;
+  padding: 0.7rem;
+  width: 13rem;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.7s all;
+}
+.createProjectSection form button:hover {
+  transform: perspective(1000px) translateX(25px) rotateY(10deg);
+}
+
 * {
   margin: 0;
   padding: 0;

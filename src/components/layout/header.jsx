@@ -1,7 +1,14 @@
-import React from "react";
+import React, {useState,useEffect} from "react";
 import { NavLink, Link } from "react-router-dom";
 
 export default function Header(){
+
+    const [token,setToken] = useState("");
+
+    useEffect(() =>{
+        setToken(localStorage.getItem("userToken"));
+    },[])
+
     return(
         <header>
             <h1>{"{devCollab}"}</h1>
@@ -19,8 +26,17 @@ export default function Header(){
                 </ul>
             </nav> 
             <section className="actions">
-                <Link to={"/login"}><button>Login</button></Link>
-                <Link to={"/dev"}><button>Sou Desenvolvedor</button></Link>
+                {!token &&
+                    <>
+                        <Link to={"/login"}><button>Login</button></Link>
+                        <Link to={"/dev"}><button>Sou Desenvolvedor</button></Link>
+                    </>
+                }
+                {token &&
+                    <>
+                        
+                    </>
+                }
             </section>
         </header>
     )

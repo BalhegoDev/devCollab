@@ -1,0 +1,46 @@
+@import '../variables/styles.scss';
+
+.createProjectSection{
+
+    h2{
+        margin-left: 16rem;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        margin-left: 16rem;
+        margin-top: 5rem;
+
+        .top{
+            display: flex;
+            gap: 2rem ;
+
+            label{
+                @include label-input;
+                input{
+                    width: 20rem;
+                }
+            }
+        }
+
+        label{
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+            textarea{
+                width: 60rem;
+                outline: none;
+                border-radius: 8px;
+                padding: .8rem;
+                font-size: 1.4rem;
+            }
+        }
+        
+        button{
+            @include buttonMakeAccount;
+        }
+    }
+}
