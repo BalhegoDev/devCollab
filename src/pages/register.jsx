@@ -4,6 +4,11 @@ import MaskedInput from "../components/common/maskedInput";
 import ButtonHome from "../components/common/buttonHome";
 import RadioInput from "../components/common/radioInput";
 import CheckboxInput from "../components/common/checkboxInput";
+import axios from "axios";
+import instance from "../axios";
+
+import { useNavigate } from "react-router-dom";
+
 
 export default function Register(){
 
@@ -15,6 +20,28 @@ export default function Register(){
     const [telefone,setTelefone] = useState(null);
     const [client,setClient] = useState("");
     const [passowrd,setPassword] = useState("");
+    const navigate = useNavigate();
+
+    const handleRegister = (e) =>{
+
+        e.preventDefault();
+        const splitedNasc = nasc.split("/");
+        const newNasc = `${splitedNasc[2]}/${splitedNasc[1]}/${splitedNasc[0]}`
+
+        instance.post("/register",{
+            nome: nome,
+            nome_usuario: username,
+            cpf: cpf,
+            data_nascimento: newNasc,
+            email: email,
+            telefone:telefone,
+            senha: passowrd,
+            tipo_user: client
+        })
+        .then(() =>{
+            navigate("/login");
+        })
+    }
 
     return(
         <div className="register-container">
@@ -25,7 +52,7 @@ export default function Register(){
                 </header>
                 <h2>Bem-vindo ao devCollab!</h2>
                 <p>Crie sua conta</p>
-                <form>
+                <form onSubmit={handleRegister}>
                     <MaskedInput
                         id="label1"
                         type="text"

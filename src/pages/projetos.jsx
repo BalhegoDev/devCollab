@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/layout/header";
 import { Link } from "react-router-dom";
 import AsideFilterProjects from "../components/layout/asideFilterProjects";
 import Job from "../components/layout/job";
 import SelectedJob from "../components/common/selectedJob";
+import instance from "../axios";
 
 export default function Projetos() {
+
+  const [projetos,setProjetos] = useState(null);
+
+  useEffect(() =>{
+    instance.get("/projetos")
+    .then((res) =>{
+      setProjetos(res.data.projs);
+    })
+
+    console.log(projetos);
+
+  },[])
 
   return (
     <>
